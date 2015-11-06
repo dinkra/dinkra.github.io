@@ -1,0 +1,123 @@
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0px;
+}
+
+a {
+	color: #C7651E;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.masthead {
+  background-image: url('cover_pic.jpeg');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  
+  border-top: 20px solid #C7651E;
+  
+  padding: 6em 0;
+}
+
+.masthead-heading,
+.masthead-intro,
+.content-footer {
+    text-align: center;
+    color: #DAB9A2;
+}
+
+.masthead-intro {
+	margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+	margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction .content {
+  margin: -200px 0 0 -200px;
+height: 400px;
+width: 400px;
+
+  background-color: #fff;
+  border-radius: 100%;
+  height: 300px;
+  margin: -150px 0 0 -150px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  zoom: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+
+}
+
+.i-am-from,
+.about-me {
+	max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  	margin-top:2em;
+  	margin-bottom: 2em;
+}
+
+section p::selection {
+  background: #C7651E;
+}
+
+.section-name {
+	font-size: 32px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+h2 {
+	color: #C7651E;
+}
+
+.content-footer {
+	background-color: #CAA78A; 
+	padding: 4em 0;
+}
+
+.content-footer > p {
+	color: white;
+}
+
+.social > li {
+	display: inline-block;
+	padding-right: 1em;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+
+    .introduction,
+    .i-am-from,
+    .about-me {
+        max-width: 20em;
+    }
+
+    .content-footer {
+        padding: 2em 0;
+    }
+}
+
+

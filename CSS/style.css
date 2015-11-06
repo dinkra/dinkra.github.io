@@ -58,6 +58,10 @@ body {
 div {
     xborder: 1px solid Chocolate;
 }
+a {
+    text-decoration: none;
+    color: #838994;
+}
 
 .navBar {
 	background-color: white;
@@ -68,10 +72,10 @@ div {
 }
 
 .content {
-	width: 60%;
+	width: 80%;
     margin: 0 auto;
     padding: 0 0.938rem;
-    min-width: 37.5rem;
+    xmin-width: 37.5rem;
 }
 
 .navBar .content {
@@ -97,13 +101,18 @@ div {
     color: #333333;
 }
 
+a:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
 .navBar .links > .active {
     color: #4c5058;
     font-weight: 600;
     font-weight: 500;
 }
 
-.links > li {
+.links > li, a {
 	display: inline-block;
 	margin-left: 1.563rem;
 	
@@ -120,16 +129,31 @@ div {
 
 }
 
+.introduction .content {
+  background-color: #fff;
+  border-radius: 100%;
+  height: 20.938rem;
+  margin: -150px 0 0 -150px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  zoom: 1;
+  position: absolute;
+  top: 400px;
+  left: 80%;
+  width: 20.938rem;
+
+}
+
 .content > h1,
 .content > h3 {
-	color: #fff;
+	color: #333;
 	text-align: center;
 	font-weight: 300;
 }
 
 .introduction h1 {
 	font-size: 3.125rem;
-	margin-top: 17.5rem;
+	margin-top: 7.5rem;
 }
 
 .introduction h3 {
@@ -155,7 +179,35 @@ button {
     font-size: 1.125rem;
 }
 
+/**
+ * About me
+ */
+#about-me  {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
 
+
+#about-me > .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    xtext-align: center;
+
+
+    background-color: #fff;
+    width: 70%;
+}
+
+p {
+    float: right;
+    margin-top: 1.7rem;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    color: #838994; 
+    letter-spacing: 0.1em;
+}
 /**
  * The Three Case Images
  */
@@ -163,6 +215,11 @@ button {
     background-color: #fff;
     overflow: hidden;
     padding-bottom: 5rem;
+}
+.cases hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
 }
 .cases .content {
     margin-top: 7.875rem;
@@ -190,7 +247,7 @@ button {
 }
 
 /**
- * Footer
+ * Footer footer
  */
 .social {
     background-color: #fff;
@@ -203,7 +260,7 @@ button {
     border-top: 1px solid #eaebec;
     margin: 1.313rem 0;
 }
-.social .icons > li {
+.social .icons > li, .social .icons > a {
     border-radius: 1.25rem;
     width: 2.5rem;
     height: 2.5rem;
